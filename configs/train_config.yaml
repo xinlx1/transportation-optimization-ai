@@ -1,0 +1,31 @@
+# configs/train_config.yaml
+
+experiment_name: "transport_opt_v1"
+tags: ["baseline", "dense", "energy-forecasting"]
+
+paths:
+  log_dir: "logs/train"
+  checkpoint_dir: "checkpoints"
+
+data:
+  file_path: "data/transport_data.csv"
+  target: "energy_consumption"
+  sequence_length: 24
+  val_split: 0.2
+  scaler_path: "models/scaler.pkl"
+
+model:
+  input_dim: 16
+  sequence_length: 24
+  hidden_units: [256, 128, 64]
+  dropout_rate: 0.3
+
+training:
+  epochs: 100
+  batch_size: 64
+  optimizer:
+    lr: 0.001
+  early_stopping:
+    monitor: "val_loss"
+    patience: 10
+    restore_best_weights: true

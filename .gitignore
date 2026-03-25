@@ -205,3 +205,30 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+<<<<<<< HEAD
+=======
+
+# --- Project Specific Customizations ---
+
+# Data: Never commit raw large-scale datasets
+data/*.csv
+data/*.xlsx
+
+# ML Artifacts: Avoid committing locally trained weights and logs
+# These should be versioned via Model Registry, not Git
+models/*.keras
+models/*.h5
+models/*.pkl
+checkpoints/
+logs/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[codz]
+*$py.class
+
+# Environments
+.env
+.venv
+venv/
+>>>>>>> e067191 (feat: complete project structure including model factory and training pipeline)
