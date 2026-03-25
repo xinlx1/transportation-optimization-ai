@@ -205,8 +205,6 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
-<<<<<<< HEAD
-=======
 
 # --- Project Specific Customizations ---
 
@@ -231,4 +229,3 @@ __pycache__/
 .env
 .venv
 venv/
->>>>>>> e067191 (feat: complete project structure including model factory and training pipeline)
