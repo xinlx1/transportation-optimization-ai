@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 🚦 Transportation-Optimization-AIThis repository contains the deep learning framework I developed during the Google Collaboration Project. The goal was simple but ambitious: use AI to tackle the mess that is large-scale urban traffic and energy waste.
 
 🧠 The ChallengeTraffic isn't just about cars; it's a massive optimization problem involving unpredictable flow and energy consumption. My task was to build a model that doesn't just "predict" but stays stable under different scales of data.
@@ -8,7 +7,6 @@
 💻 Tech StackCore: Python, TensorFlow Focus: Hyperparameter Optimization, Regularization, Benchmarking 
 
 📈 Key ResultsSuccessfully predicted energy forecasting with significantly lower variance.Improved model convergence speed through better weight initialization and tuning.
-=======
 # Transportation Optimization AI: Energy Consumption Forecasting
 
 An industry-grade deep learning pipeline for large-scale multimodal transportation data. This project implements a modular architecture to forecast energy consumption using sequence-based neural networks.
@@ -40,4 +38,3 @@ pip install -r requirements.txt
 # Generate mock data and run training
 python scripts/generate_data.py
 python main.py
->>>>>>> e067191 (feat: complete project structure including model factory and training pipeline)
